@@ -1,0 +1,15 @@
+{
+  "name": "neon-drift",
+  "version": "1.1.0",
+  "description": "NEON DRIFT — neon top-down arcade racer with online team races",
+  "private": true,
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "G-navos Developer",
+  "license": "UNLICENSED"
+}
