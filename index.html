@@ -4210,7 +4210,7 @@ input.nm.wide{width:100%;text-transform:uppercase}
   //  ONLINE — profile by secret code, friends, rooms, team races
   // =========================================================
   // Put the address of your Render Web Service here (or set it in Settings → Online server).
-  var DEFAULT_SERVER = 'https://neon-drift-server.onrender.com';
+  var DEFAULT_SERVER = 'https://neon-drift-f0v1.onrender.com';
   var TEAM_COL = ['#ff2bd6', '#22f3ff'];
   var NET_B32 = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
@@ -5665,7 +5665,7 @@ input.nm.wide{width:100%;text-transform:uppercase}
     if (!any) iv.appendChild(el('div', { cls: 'help' }, esc(t('netNoOnline'))));
   }
   function inviteLink() {
-    var base = location.protocol.indexOf('http') === 0 ? location.origin + location.pathname : 'https://neon-drift.onrender.com/';
+    var base = location.protocol.indexOf('http') === 0 ? location.origin + location.pathname : 'https://neon-drift-f0v1.onrender.com/';
     return base + '?join=' + (NET.room ? NET.room.code : '');
   }
 
