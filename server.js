@@ -16,7 +16,8 @@ var fs = require('fs');
 var path = require('path');
 
 var PORT = Number(process.env.PORT) || 8090;
-var STATIC_DIR = path.resolve(__dirname, '..');
+// works whether server.js sits next to index.html or inside a server/ folder
+var STATIC_DIR = fs.existsSync(path.join(__dirname, 'index.html')) ? __dirname : path.resolve(__dirname, '..');
 var LAG_MS = Number(process.env.LAG_MS) || 0;          // artificial latency for testing
 var VERSION = 1;
 var TICK_MS = 50;
