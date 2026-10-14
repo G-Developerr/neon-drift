@@ -1,5 +1,5 @@
 /* NEON DRIFT service worker — network-first, falls back to cache when offline */
-var CACHE = 'neon-drift-v4';
+var CACHE = 'neon-drift-v6';
 var CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', function (e) {
