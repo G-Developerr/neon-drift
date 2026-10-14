@@ -4,7 +4,7 @@
 
 **Top-down neon arcade racing. Drift, charge your nitro, win with your team.**
 
-### [▶ Play now: neon-drift-f0v1.onrender.com](https://neon-drift-f0v1.onrender.com/)
+### [▶ Play now: neon-drift-online.onrender.com](https://neon-drift-online.onrender.com/)
 
 Runs in the browser on PC and on phones · Greek & English · Free
 
@@ -191,7 +191,7 @@ icon-180.png          Apple touch icon
 icon-192.png          PWA icon
 icon-512.png          PWA / maskable icon
 package.json          start script for the online server (no dependencies)
-server/server.js      online game server (Node.js, zero dependencies)
+server.js             online game server (Node.js, zero dependencies)
 screenshots/          images used in this README
 ```
 
@@ -210,10 +210,10 @@ For the single-player modes, any static server works too (`npx serve .` or `pyth
 The live version runs on a free Render **Web Service**, which serves both the game and the online server:
 
 1. New → Web Service → connect the repository
-2. Runtime: Node · Build command: leave empty · Start command: `npm start`
+2. Runtime: Node · Build command: `npm install` · Start command: `npm start`
 3. Instance type: Free · Region: Frankfurt
 
-The game connects to `https://neon-drift-f0v1.onrender.com` by default (`DEFAULT_SERVER` in `index.html`). A different address can be set in Settings → Online server, and when the game is opened from the Web Service itself it finds the server on its own.
+The game connects to `https://neon-drift-online.onrender.com` by default (`DEFAULT_SERVER` in `index.html`). A different address can be set in Settings → Online server, and when the game is opened from the Web Service itself it finds the server on its own.
 
 Free instances sleep after 15 minutes without traffic. The server pings its own public URL every 10 minutes to stay awake (set `KEEP_AWAKE=0` to turn that off), and the game starts waking it as soon as it loads. One free service running all month fits inside Render's 750 free hours.
 
@@ -226,6 +226,6 @@ GitHub: [G-Developerr](https://github.com/G-Developerr) · Instagram: [@mhtsos_t
 
 <div align="center">
 
-### [▶ Play NEON DRIFT](https://neon-drift-f0v1.onrender.com/)
+### [▶ Play NEON DRIFT](https://neon-drift-online.onrender.com/)
 
 </div>
